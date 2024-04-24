@@ -1,5 +1,5 @@
 {
-    "name": "TelegramYukki ",
+    "name": "TeleYukki ",
     "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
     "logo": "https://telegra.ph/file/6d9c1f5e4acb05d24e784.jpg",
     "keywords": [
@@ -30,7 +30,7 @@
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "",
+        "value": "6825175366:AAHQ0loFoZu6bB9XRvmJh_ICq035yL2n_KM",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -40,7 +40,7 @@
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. Please don't use ascii characters",
-        "value": "",
+        "value": "TeleXMusic",
         "required": true
       },
       "OWNER_ID": {
@@ -65,7 +65,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
+        "value": "-1001969246312",
         "required": true
       },
       "UPSTREAM_REPO": {
