@@ -32,7 +32,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("TelegramMusic").error(
+        LOGGER("TeleMusic").error(
             "Tidak Ada Asisten Klien yang Ditentukan Vars!.. Proses Keluar."
         )
         return
@@ -40,7 +40,7 @@ async def init():
         not config.SPOTIFY_CLIENT_ID
         and not config.SPOTIFY_CLIENT_SECRET
     ):
-        LOGGER("TelegramMusic").warning(
+        LOGGER("TeleMusic").warning(
             "Tidak ada Spotify Vars yang ditentukan.  Bot Anda tidak akan dapat memainkan kueri spotify."
         )
     try:
@@ -55,7 +55,7 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("YukkiMusic.plugins" + all_module)
-    LOGGER("Telegrammusic.plugins").info(
+    LOGGER("TeleMusic.plugins").info(
         "Successfully Imported Modules "
     )
     await userbot.start()
@@ -65,17 +65,17 @@ async def init():
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
-        LOGGER("TelegramMusic").error(
+        LOGGER("TeleMusic").error(
             "[ERROR] - \n\nHarap aktifkan Obrolan Suara Grup Logger Anda.  Pastikan Anda tidak pernah menutup/mengakhiri obrolan suara di grup log Anda"
         )
         sys.exit()
     except:
         pass
     await Yukki.decorators()
-    LOGGER("TelegramMusic").info("XTelegram Music Bot Started Successfully")
+    LOGGER("TeleMusic").info("XTele Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("TelegramMusic").info("Stopping XTelegram ! GoodBye")
+    LOGGER("TeleMusic").info("Stopping XTele ! GoodBye")
