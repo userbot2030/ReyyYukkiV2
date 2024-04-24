@@ -31,10 +31,10 @@ def start_pannel(_):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text=_["S_B_4"], url=f"{SUPPORT_CHANNEL}"
+                    text=_["S_B_4"], url=f"https://t.me/Disney_storeDan"
                 ),
                 InlineKeyboardButton(
-                    text=_["S_B_3"], url=f"{SUPPORT_GROUP}"
+                    text=_["S_B_3"], url=f"https://t.me/musik_supportdan"
                 ),
             ]
         )
@@ -124,7 +124,7 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
             buttons.append(
                 [
                     InlineKeyboardButton(
-                        text=_["S_B_7"], user_id=OWNER
+                        text=_["S_B_7"], user_id=5779185981
                     ),
                 ]
             )
